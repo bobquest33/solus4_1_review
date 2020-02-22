@@ -1,0 +1,345 @@
+<!DOCTYPE html><html><head>
+      <title>readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/priyabratadash/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.5.2/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h2 class="mume-header" id="trying-solus-linux-on-distrotestnet">Trying Solus Linux on <a href="http://Distrotest.net">Distrotest.net</a></h2>
+
+<p><img src="Solus-Feb-22-22-19-46.png" alt></p>
+<h3 class="mume-header" id="background">Background</h3>
+
+<p>From 2019 I have been  trying to test Solus Linux, but was not sure if it was worth downloading  and then testing it on my VM. I have heard positive reviews about its gaming capabilities but I wanted to test Solus as a daily driver without downloading the ISO. This led me to search for options where I can test a Linux distribution online without downloading.</p>
+<p>Last year I heard about <a href="https://distrotest.net/">distrotest.net</a> but I was not sure how good was the site. After finding good reviews about the site I gave it a try and rest of the blog is my experience testing Solus.</p>
+<h3 class="mume-header" id="introduction">Introduction</h3>
+
+<p><strong>Distrotest</strong></p>
+<p>DistroTest is the first and probably the only online operating system tester you can test a live linux distribution within a browser without either installing the distribution or needing a VM or ISO to test it in a Sandbox.</p>
+<p><img src="Solus-Feb-22-22-20-54.png" alt></p>
+<p>There a list of linux distributions to choose from, you choose the appropriate version of the distro you want to test and click start. The distro runs in a QEMU-hosted window. Distrotest uses QEMU which is a generic open source machine emulator and virtualizer.</p>
+<p><img src="Solus-Feb-22-22-19-07.png" alt></p>
+<p>You can connect either via VNC live session in browser or directly connecting via your VNC client software. I used both the VNCViewer in my machine and once the time limit for the session was over, I used the live browser VNC session. I would say the browser version gave best results though overall there was a latency in using VNC on Distrotest which is expected given the bandwidth and system limitation of QEMU.</p>
+<p><img src="Solus-Feb-22-22-21-27.png" alt></p>
+<p>Perhaps the best benefit from using <a href="http://DistroTest.net">DistroTest.net</a> is the ability to check out Linux without disturbing a single thing about your current computer configuration. It is not a perfect solution -- but it beats the alternatives.</p>
+<p>You can check more about Distrotest in the below links:</p>
+<ul>
+<li><a href="https://www.linuxinsider.com/story/86178.html">How to Distro Hop With a Web Browser</a></li>
+<li><a href="https://www.fosslinux.com/22987/test-drive-a-linux-distro-online-before-you-hate-it.htm">Test drive a Linux distro online before you hate it</a></li>
+</ul>
+<p><strong>Solus Linux</strong></p>
+<p><img src="Solus-Feb-23-00-42-57.png" alt></p>
+<p><a href="https://getsol.us/home/">Solus Linux</a> is an independently developed OS which uses Linux OS but does not build upon other popular Linux distributions like Ubuntu, Debian, Archlinux or Fedora. Based on its <a href="https://en.wikipedia.org/wiki/Solus_(operating_system)">wikipedia pages</a></p>
+<blockquote>
+<p>Starting with the Debian branch of Linux it migrated to a unique approach including Pisi and Evolve OS.<br>
+It is offered as a curated rolling release model under the slogan &quot;Install Today. Updates Forever&quot;. Solus contains a wide variety of desktop environments depending on release chosen, options include Solus own Budgie Desktop, GNOME, MATE and KDE Plasma.</p>
+</blockquote>
+<p>I chose KDE Plasma version for the testing as I just did not want to test Solus but also wanted to check out how KDE Plasma as a desktop environment felt.</p>
+<h3 class="mume-header" id="first-impressions">First Impressions</h3>
+
+<p><img src="Solus-Feb-22-22-17-28.png" alt></p>
+<p>Initially I thought to make it a quick review as I did not expect to get much performance from the slow VNC session but as I started exploring various aspects of Solus and KDE Plasma I ended up doing a much more detailed hands on Solus than I earlier intended to do. The QEMU VM did not have an internet connection and since it was a remote VM I did not get a chance to test the multimedia capabilities of Solus extensively.</p>
+<p><img src="Solus-Feb-22-21-55-25.png" alt></p>
+<p>Solus comes with Firefox as its default browser and LibreOffice its its default office suit and Thuderbird for emails, hence I rather explored the features that differentiates from the other distributions that I have reviewed earlier.</p>
+<p><img src="solus-Feb-22-21-40-09.png" alt></p>
+<h3 class="mume-header" id="positives">Positives</h3>
+
+<p><img src="Solus-Feb-22-21-51-19.png" alt></p>
+<p>For me Linux Lite and Deepin have been absolute best when it comes to desktop experience. But KDE Plasma was head to head in many features. The dark theme of Solus was darker than Linux Lite but surprisingly looked refreshing. Some of the key features for me, the desktop layout and the wallpaper used were soothing to the eye and the mouse clicks were snappy despite the slow VM. Though panel layout looked much like Linux Lite but the start menu and the Dolphin file browser was much cleaner to me than Deepin or Linux Lite.</p>
+<p><img src="Solus-Feb-22-21-50-17.png" alt></p>
+<p>The most impressive thing for me was Kate, the default Advanced text editor that comes with KDE Plasma. And the favorite part for me was its native support for programming languages and doubling as a IDE when I wished to develop a small test program. In the small session I was able to write a small program and test it. This itself speaks volume about Solus as a distribution and Kate as a programming editor. In many ways I like Kate over Geany or Notepad++.</p>
+<p><img src="Solus-Feb-22-22-02-59.png" alt></p>
+<p>Dolphin File browser which came bundled with this distribution had a dark theme that was more modern than other file browsers that I have seen and the ability to split the file browser into two panes is my favorite feature as it makes the process of copy paste and moving files between two different folders very easy.</p>
+<p><img src="Solus-Feb-22-21-58-57.png" alt></p>
+<p>While I saw some new multimedia applications like SMPlayer and mpv. Elisa was the music app that touched my heart. After Rhythmbox , Elisa with its modern look and music centric UI has been the best looking music player that I have seen so far. I am surely going to try the music player soon. In the current time where we tend to use streaming services and phones to consume music, still apps like Elisa have a niche when we want to use our PCs for multimedia.</p>
+<p><img src="Solus-Feb-22-21-59-56.png" alt></p>
+<p>I also liked its Image Viewer which reinforces my view about KDE is that this UI is not just for a new user but rather has so much to offer to pro users, e.g. the metadata tab that comes with Gwenview comes with the default UI which is very much helpful when you open an image. You are not just looking at an image but getting information like Resolution, tagging and the filename.</p>
+<p><img src="Solus-Feb-22-22-10-45.png" alt></p>
+<h2 class="mume-header" id="negatives">Negatives</h2>
+
+<p><img src="Solus-Feb-22-23-28-18.png" alt></p>
+<p>I should not say these as the negatives but personally I felt as quirks which would be difficult for linux users who are used to Distro hopping.<br>
+My biggest struggle was to find the softwares that I would use as a regular Linux user to download directly using either yum, pacman or apt. Since this is a distribution built upon Pisi linux, it uses its package manager eopkg. Which to me is one another package manager to learn though a feature rich and complete package manager for Solus, though the Software Center provided on Solus was a better experience.</p>
+<p><img src="Solus-Feb-22-21-44-20.png" alt></p>
+<p>I hope this is where things like flatpack and snap package formats will help in standardization of package distribution technologies across various linux distributions.</p>
+<p><img src="Solus-Feb-22-22-04-40.png" alt></p>
+<p>KDE Plasma &amp; Solus is a very feature rich Desktop environment and that is its bane as well as most of its features are hidden from plain sight. I wish there was a quick and easy help option like Mageia or Linux Lite, this is something that Solus and its community can improve. Protip anything you want to find in KDE Plasma, go to its start menu and type it in the search. Many a times what you are searching you will find there.</p>
+<p><img src="Solus-Feb-22-22-18-24.png" alt></p>
+<p>While its not a let down, but from the KConsole terminal I expected more having used to seeing so many pro features with other softwares in the KDE ecosystem provide. After using the terminal of Linux Lite I am now used to comparing those terminals with it. It may be so that I need to spend more time with KConsole.</p>
+<p><img src="Solus-Feb-22-23-26-43.png" alt></p>
+<h2 class="mume-header" id="final-thoughts">Final Thoughts</h2>
+
+<p>While many users expected me to review Solus with its original GNOME version and may be disappointed with my review of KDE Plasma version. But being a user of light weight Linux distros I feel Solus 4.1 KDE Plasma version that I tested can also be a good light weight option for your machine as a daily driver provided you get used to its quirky package manager and wish some pro features that KDE Plasma provides. For me Solus<br>
+KDE Plasma version is on the shortlist when ever I plan move from Lubuntu which I am currently using.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
