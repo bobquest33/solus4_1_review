@@ -6,4 +6,3 @@ for f in os.listdir():
         nf = f.replace(" ",'-')
         print(f,nf)
         os.rename(f,nf)
-        
