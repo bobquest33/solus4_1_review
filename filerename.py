@@ -10,8 +10,8 @@ for f in os.listdir():
         try:
             foo = Image.open(f)
             width,height = foo.size
-            nwidth = int(width*0.5)
-            nheight = int(height*0.5)
+            nwidth = int(width*0.75)
+            nheight = int(height*0.75)
             foo = foo.resize((nwidth,nheight),Image.ANTIALIAS)
             foo.save(f,quality=95)
         except Exception as e:
