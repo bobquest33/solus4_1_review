@@ -1,6 +1,6 @@
 ## Trying Solus Linux on Distrotest.net
  
-![](Solus-Feb-22-22-19-46.png)
+ ![](Solus-Feb-23-00-42-57.png)
  
 ### Background
 From 2019 I have been  trying to test Solus Linux, but was not sure if it was worth downloading  and then testing it on my VM. I have heard positive reviews about its gaming capabilities but I wanted to test Solus as a daily driver without downloading the ISO. This led me to search for options where I can test a Linux distribution online without downloading.
@@ -31,7 +31,8 @@ You can check more about Distrotest in the below links:
  
 **Solus Linux**
  
-![](Solus-Feb-23-00-42-57.png)
+ ![](Solus-Feb-22-22-19-46.png)
+
  
 [Solus Linux](https://getsol.us/home/) is an independently developed OS which uses Linux OS but does not build upon other popular Linux distributions like Ubuntu, Debian, Archlinux or Fedora. Based on its [wikipedia pages](https://en.wikipedia.org/wiki/Solus_(operating_system))
  
