@@ -9,8 +9,10 @@ for f in os.listdir():
         os.rename(f,nf)
         try:
             foo = Image.open(f)
-            print(foo.size)
-            foo = foo.resize((160,300),Image.ANTIALIAS)
+            width,height = foo.size
+            nwidth = int(width*0.5)
+            nheight = int(height*0.5)
+            foo = foo.resize((nwidth,nheight),Image.ANTIALIAS)
             foo.save(f,quality=95)
         except Exception as e:
             print(e)
